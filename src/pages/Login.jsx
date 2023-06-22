@@ -10,10 +10,10 @@ function Login() {
   });
 
   return (
-    <Container className="mt-4 flex justify-center">
+    <Container className="mt-4">
       <Stack gap={4}>
         <h2 className="mx-auto">Appwrite | Expense Manager</h2>
-        <Form>
+        <Form className="mt-4">
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control
