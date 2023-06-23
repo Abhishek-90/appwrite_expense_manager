@@ -3,6 +3,9 @@ import { Container, Stack } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
+// TODO: Itegrate App Write to add new user's data in database and finish signup
+// TODO: Add Google Authentication signup using app write
+
 function Signup() {
   const [signupCredentials, setSignupCredentials] = useState({
     name: "",
