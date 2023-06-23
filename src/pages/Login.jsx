@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Container, Stack } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { NavLink } from "react-router-dom";
 
 // TODO: Itegrate App Write to add new user's data in database and finish signin
 // TODO: Add Google Authentication signin using app write
@@ -51,6 +52,11 @@ function Login() {
           <Button variant="primary" type="submit">
             Submit
           </Button>
+          <NavLink to="/signup">
+            <Button className="mx-3" variant="outline-primary" type="button">
+              Sign up
+            </Button>
+          </NavLink>
         </Form>
       </Stack>
     </Container>
