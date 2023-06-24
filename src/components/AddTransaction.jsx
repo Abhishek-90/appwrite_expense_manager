@@ -6,7 +6,6 @@ import InputGroup from "react-bootstrap/InputGroup";
 import Row from "react-bootstrap/Row";
 
 function AddTransaction() {
-  const [validated, setValidated] = useState(false);
   const [transactionData, setTransactionData] = useState({
     date: new Date().toISOString().split("T")[0],
     amount: "",
@@ -22,11 +21,11 @@ function AddTransaction() {
     if (form.checkValidity() === false) {
       return;
     }
-    setValidated(true);
+    // setValidated(true);
   };
 
   return (
-    <Form noValidate validated={validated} onSubmit={handleSubmit}>
+    <Form noValidate onSubmit={handleSubmit}>
       <Row className="mb-3">
         <Form.Group as={Col} md="3" controlId="validationCustom01">
           <Form.Label>Date</Form.Label>
