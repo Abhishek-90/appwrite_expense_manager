@@ -15,10 +15,12 @@ function AddTransaction() {
   });
 
   const handleSubmit = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
     const form = event.currentTarget;
+
     if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
+      return;
     }
     setValidated(true);
   };
@@ -40,7 +42,6 @@ function AddTransaction() {
               })
             }
           />
-          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
         <Form.Group as={Col} md="3" controlId="validationCustom02">
           <Form.Label>Type</Form.Label>
@@ -56,7 +57,6 @@ function AddTransaction() {
               })
             }
           />
-          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
       </Row>
       <Row className="mb-3">
@@ -77,9 +77,6 @@ function AddTransaction() {
                 })
               }
             />
-            <Form.Control.Feedback type="invalid">
-              Please choose a username.
-            </Form.Control.Feedback>
           </InputGroup>
         </Form.Group>
         <Form.Group as={Col} md="3" controlId="validationCustom03">
@@ -97,9 +94,6 @@ function AddTransaction() {
               })
             }
           />
-          <Form.Control.Feedback type="invalid">
-            Please provide a valid city.
-          </Form.Control.Feedback>
         </Form.Group>
       </Row>
       <Button type="submit">Add Transaction</Button>
