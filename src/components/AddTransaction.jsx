@@ -27,7 +27,7 @@ function AddTransaction() {
   return (
     <Form noValidate onSubmit={handleSubmit}>
       <Row className="mb-3">
-        <Form.Group as={Col} md="3" controlId="validationCustom01">
+        <Form.Group as={Col} controlId="validationCustom01">
           <Form.Label>Date</Form.Label>
           <Form.Control
             required
@@ -42,7 +42,7 @@ function AddTransaction() {
             }
           />
         </Form.Group>
-        <Form.Group as={Col} md="3" controlId="validationCustom02">
+        <Form.Group as={Col} controlId="validationCustom02">
           <Form.Label>Type</Form.Label>
           <Form.Control
             required
@@ -59,7 +59,7 @@ function AddTransaction() {
         </Form.Group>
       </Row>
       <Row className="mb-3">
-        <Form.Group as={Col} md="3" controlId="validationCustomUsername">
+        <Form.Group as={Col} controlId="validationCustomUsername">
           <Form.Label>Description</Form.Label>
           <InputGroup hasValidation>
             <Form.Control
@@ -78,7 +78,7 @@ function AddTransaction() {
             />
           </InputGroup>
         </Form.Group>
-        <Form.Group as={Col} md="3" controlId="validationCustom03">
+        <Form.Group as={Col} controlId="validationCustom03">
           <Form.Label>Amount</Form.Label>
           <Form.Control
             type="text"
