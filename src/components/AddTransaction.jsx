@@ -44,9 +44,8 @@ function AddTransaction() {
         </Form.Group>
         <Form.Group as={Col} controlId="validationCustom02">
           <Form.Label>Type</Form.Label>
-          <Form.Control
+          <Form.Select
             required
-            type="text"
             value={transactionData.type}
             name="type"
             onChange={(e) =>
@@ -55,7 +54,11 @@ function AddTransaction() {
                 [e.target.name]: e.target.value,
               })
             }
-          />
+          >
+            <option>Select Type</option>
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+          </Form.Select>
         </Form.Group>
       </Row>
       <Row className="mb-3">
