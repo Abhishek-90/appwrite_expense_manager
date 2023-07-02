@@ -50,7 +50,7 @@ function Login() {
             />
           </Form.Group>
           <Button variant="primary" type="submit">
-            Submit
+            Login
           </Button>
           <NavLink to="/signup">
             <Button className="mx-3" variant="outline-primary" type="button">

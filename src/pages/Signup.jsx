@@ -64,7 +64,7 @@ function Signup() {
             />
           </Form.Group>
           <Button variant="primary" type="submit">
-            Submit
+            Sign up
           </Button>
           <NavLink to="/">
             <Button className="mx-3" variant="outline-primary" type="button">
